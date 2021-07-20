@@ -212,7 +212,7 @@ module View = struct
         (Controller.update (Update_field task_input_dom##.value) (r, f))) ;
 
     Html5.(header ~a:[a_class ["header"]] [
-        h1 [ txt "todos" ];
+        h1 [ txt "VUEJSOO" ];
         task_input
       ])
 
@@ -397,14 +397,6 @@ module View = struct
   let info_footer =
     Html5.(footer ~a:[a_class ["info"]] [
         p [txt "Double-click to edit a todo"] ;
-        p [
-          txt "Written by " ;
-          a ~a:[a_href "https://stephanelegrand.wordpress.com/"] [txt "Stéphane Legrand"]
-        ];
-        p [
-          txt "Various code improvements from " ;
-          a ~a:[a_href "https://github.com/Drup"] [txt "Gabriel Radanne"]
-        ];
         p [
           txt "Based on " ;
           a ~a:[a_href "https://github.com/evancz"] [txt "Elm implementation by Evan Czaplicki"]
