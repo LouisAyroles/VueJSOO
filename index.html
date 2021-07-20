@@ -8,7 +8,11 @@
 		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
 	</head>
 	<body>
-		<div id="todomvc"></div>
-		<script src="js/todomvc.js"></script>
+	  <div id="app">
+	    <p>{{ message }}</p>
+	    <button v-on:click="reverseMessage()">Reverse Message</button>
+	  </div>
+
+	  <script src="js/todomvc.js"></script>
 	</body>
 </html>
